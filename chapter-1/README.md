@@ -1,4 +1,10 @@
-## Chapter 1
+# Chapter 1
+
+## Highlights
+
+> An incorrect comment is worse than no comment at all because it may mislead the reader. (p. 9)
+
+## Exercises
 
 ### Exercise 1.2
 
