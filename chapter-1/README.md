@@ -15,3 +15,27 @@ std::cout << "The sum of " << v1;
 ```
 
 The program is not legal. The second and third lines are missing the left operand of the `<<` operator.
+
+### Exercise 1.7
+
+```c++
+/*
+ * comment pairs /* */ cannot nest.
+ */
+int main() { return 0; }
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:2:18: warning: '/*' within block comment [-Wcomment]
+ * comment pairs /* */ cannot nest.
+                 ^
+main.cpp:2:24: error: unknown type name 'cannot'
+ * comment pairs /* */ cannot nest.
+                       ^
+main.cpp:2:35: error: expected ';' after top level declarator
+ * comment pairs /* */ cannot nest.
+                                  ^
+                                  ;
+1 warning and 2 errors generated.
+```
