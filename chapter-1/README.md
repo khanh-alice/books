@@ -9,9 +9,9 @@ $ echo $?
 ### Exercise 1.6
 
 ```c++
-std::cout << "The sum of " << v1;
-          << " and " << v2;
-          << " is " << v1 + v2 << std::endl;
+  std::cout << "The sum of " << v1;
+            << " and " << v2;
+            << " is " << v1 + v2 << std::endl;
 ```
 
 The program is not legal. The second and third lines are missing the left operand of the `<<` operator.
@@ -39,3 +39,15 @@ main.cpp:2:35: error: expected ';' after top level declarator
                                   ;
 1 warning and 2 errors generated.
 ```
+
+### Exercise 1.8
+
+```c++
+  std::cout << "/*";
+  std::cout << "*/";
+  std::cout << /* "*/" */;
+  std::cout << /* "*/" /* "/*" */;
+```
+
+The first, second and fourth statements are legal.
+The third statement is not legal. The closing `"` is missing.
