@@ -1,3 +1,5 @@
 # C++ Primer
 
-This repository contains my exercise answers for **C++ Primer**. The source code created using CLion and Xcode's Apple clang, but should work with other comparable IDEs and compliers.
+This repository contains my exercise answers for **C++ Primer, Fifth Edition / Stanley B. Lippman, Josée Lajoie, Barbara E. Moo.**
+
+The source code created using **CLion** and **Apple clang**, but should work with other comparable IDEs and compilers.
