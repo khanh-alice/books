@@ -332,3 +332,5 @@ extern _LIBCPP_FUNC_VIS ostream cout;
                                 ^
 1 error generated.
 ```
+
+### [Exercise 1.16](exercise-1.16/main.cpp)
