@@ -11,7 +11,8 @@
 ### [Exercise 1.2](exercise-1.2/main.cpp)
 
 ```console
-$ ./exercise-1.2
+$ c++ main.cpp
+$ ./a.out
 $ echo $?
 255
 ```
