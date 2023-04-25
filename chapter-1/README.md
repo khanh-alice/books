@@ -134,3 +134,200 @@ while (i < 10) {
 * `while` loops can be less concise than `for` loops for iterating over a specific range of values.
 * `while` loops can be more error-prone than `for` loops because they don't have a fixed initialization or increment
   expression, which can make it easier to introduce bugs or off-by-one errors.
+
+### Exercise 1.15
+
+#### Syntax errors
+
+##### error: missing ) in parameter list for main
+
+```c++
+int main( {
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:1:1: error: main cannot be declared as global variable
+int main( {
+^
+main.cpp:1:11: error: expected expression
+int main( {
+          ^
+main.cpp:3:2: error: expected ';' after top level declarator
+}
+ ^
+ ;
+3 errors generated.
+```
+
+##### error: used colon, not a semicolon, after endl
+
+```c++
+#include <iostream>
+
+int main() {
+  std::cout << "Read each file." << std::endl:
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:4:46: error: expected ';' after expression
+  std::cout << "Read each file." << std::endl:
+                                             ^
+                                             ;
+1 error generated.
+```
+
+##### error: missing quotes around string literal
+
+```c++
+#include <iostream>
+
+int main() {
+  std::cout << "Read each file." << std::endl;
+  std::cout << Update master. << std::endl;
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:5:22: error: expected ';' after expression
+  std::cout << Update master. << std::endl;
+                     ^
+                     ;
+main.cpp:5:16: error: use of undeclared identifier 'Update'
+  std::cout << Update master. << std::endl;
+               ^
+main.cpp:5:23: error: use of undeclared identifier 'master'
+  std::cout << Update master. << std::endl;
+                      ^
+main.cpp:5:31: error: expected unqualified-id
+  std::cout << Update master. << std::endl;
+                              ^
+4 errors generated.
+```
+
+##### error: missing ; on return statement
+
+```c++
+#include <iostream>
+
+int main() {
+  std::cout << "Read each file." << std::endl;
+  std::cout << "Update master." << std::endl;
+  std::cout << "Write new master." std::endl;
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:6:35: error: expected ';' after expression
+  std::cout << "Write new master." std::endl;
+                                  ^
+                                  ;
+main.cpp:6:36: error: reference to overloaded function could not be resolved; did you mean to call it?
+  std::cout << "Write new master." std::endl;
+                                   ^~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1037:1: note: possible target for call
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+2 errors generated.
+```
+
+##### error: missing ; on return statement
+
+```c++
+#include <iostream>
+
+int main() {
+  std::cout << "Read each file." << std::endl;
+  std::cout << "Update master." << std::endl;
+  std::cout << "Write new master." << std::endl;
+  return 0
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:7:11: error: expected ';' after return statement
+  return 0
+          ^
+          ;
+1 error generated.
+```
+
+#### Type errors
+
+```c++
+int add(int x, int y) {
+  return x + y;
+}
+
+int main() {
+  int sum = add("hello", "world");
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp           
+main.cpp:6:13: error: no matching function for call to 'add'
+  int sum = add("hello", "world");
+            ^~~
+main.cpp:1:5: note: candidate function not viable: no known conversion from 'const char[6]' to 'int' for 1st argument
+int add(int x, int y) {
+    ^
+1 error generated.
+```
+
+#### Declaration errors
+
+##### error: uses "v" not "v1"
+```c++
+#include <iostream>
+
+int main() {
+  int v1 = 0, v2 = 0;
+  std::cin >> v >> v2;
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:5:15: error: use of undeclared identifier 'v'
+  std::cin >> v >> v2;
+              ^
+1 error generated.
+```
+
+##### error: cout not defined; should be std::cout
+
+```c++
+#include <iostream>
+
+int main() {
+  int v1 = 0, v2 = 0;
+  std::cin >> v1 >> v2;
+  cout << v1 + v2 << std::endl;
+  return 0;
+}
+```
+
+```shell
+$ c++ main.cpp
+main.cpp:6:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+  cout << v1 + v2 << std::endl;
+  ^~~~
+  std::cout
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:53:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+1 error generated.
+```
