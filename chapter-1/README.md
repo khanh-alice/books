@@ -6,7 +6,9 @@
 
 ## Exercises
 
-### Exercise 1.2
+### [Exercise 1.1](exercise-1.1/main.cpp)
+
+### [Exercise 1.2](exercise-1.2/main.cpp)
 
 ```shell
 $ ./exercise-1.2
@@ -14,7 +16,13 @@ $ echo $?
 255
 ```
 
-### Exercise 1.6
+### [Exercise 1.3](exercise-1.3/main.cpp)
+
+### [Exercise 1.4](exercise-1.4/main.cpp)
+
+### [Exercise 1.5](exercise-1.5/main.cpp)
+
+### [Exercise 1.6](exercise-1.6/main.cpp)
 
 ```c++
 std::cout << "The sum of " << v1;
@@ -48,7 +56,7 @@ main.cpp:2:35: error: expected ';' after top level declarator
 1 warning and 2 errors generated.
 ```
 
-### Exercise 1.8
+### [Exercise 1.8](exercise-1.8/main.cpp)
 
 ```c++
 std::cout << "/*";
@@ -59,7 +67,13 @@ std::cout << /* "*/" /* "/*" */;
 
 The first, second and fourth statements are legal. The third statement is not legal. The closing `"` is missing.
 
-### Exercise 1.12
+### [Exercise 1.9](exercise-1.9/main.cpp)
+
+### [Exercise 1.10](exercise-1.10/main.cpp)
+
+### [Exercise 1.11](exercise-1.11/main.cpp)
+
+### [Exercise 1.12](exercise-1.12/main.cpp)
 
 ```c++
 int sum = 0;
@@ -68,6 +82,8 @@ for (int i = -100; i <= 100; ++i)
 ```
 
 This for loop sums all the integers from -100 to 100. The final `sum` is 0.
+
+### [Exercise 1.13](exercise-1.13/main.cpp)
 
 ### Exercise 1.14
 
