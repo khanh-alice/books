@@ -59,3 +59,13 @@ main.cpp:2:35: error: expected ';' after top level declarator
 
 The first, second and fourth statements are legal.
 The third statement is not legal. The closing `"` is missing.
+
+### Exercise 1.12
+
+```c++
+  int sum = 0;
+  for (int i = -100; i <= 100; ++i)
+    sum += i;
+```
+
+This for loop sums all the integers from -100 to 100. The final `sum` is 0.
