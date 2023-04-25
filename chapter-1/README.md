@@ -10,7 +10,7 @@
 
 ### [Exercise 1.2](exercise-1.2/main.cpp)
 
-```shell
+```console
 $ ./exercise-1.2
 $ echo $?
 255
@@ -41,7 +41,7 @@ The program is not legal. The second and third lines are missing the left operan
 int main() { return 0; }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:2:18: warning: '/*' within block comment [-Wcomment]
  * comment pairs /* */ cannot nest.
@@ -147,7 +147,7 @@ int main( {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:1:1: error: main cannot be declared as global variable
 int main( {
@@ -173,7 +173,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:4:46: error: expected ';' after expression
   std::cout << "Read each file." << std::endl:
@@ -194,7 +194,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:5:22: error: expected ';' after expression
   std::cout << Update master. << std::endl;
@@ -225,7 +225,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:6:35: error: expected ';' after expression
   std::cout << "Write new master." std::endl;
@@ -253,7 +253,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:7:11: error: expected ';' after return statement
   return 0
@@ -275,7 +275,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp           
 main.cpp:6:13: error: no matching function for call to 'add'
   int sum = add("hello", "world");
@@ -299,7 +299,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:5:15: error: use of undeclared identifier 'v'
   std::cin >> v >> v2;
@@ -320,7 +320,7 @@ int main() {
 }
 ```
 
-```shell
+```console
 $ c++ main.cpp
 main.cpp:6:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
   cout << v1 + v2 << std::endl;
