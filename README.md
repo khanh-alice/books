@@ -4,4 +4,4 @@ My personal repository where I keep track of my reading notes and exercise sourc
 
 ## 📚 My Library
 
-* 📗 [C++ Primer, Fifth Edition](cpp-primer) by Stanley B. Lippman, Josée Lajoie, Barbara E. Moo.
+* 📗 [C++ Primer, Fifth Edition](cpp-primer/README.md) by Stanley B. Lippman, Josée Lajoie, Barbara E. Moo.
