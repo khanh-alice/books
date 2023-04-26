@@ -357,3 +357,5 @@ $ ./a.out
 4 occurs 1 times
 5 occurs 1 times
 ```
+
+### [Exercise 1.19](exercise-1.19/main.cpp)
