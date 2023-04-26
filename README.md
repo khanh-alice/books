@@ -1,5 +1,7 @@
-# C++ Primer
+# 📖 Books
 
-This repository contains my exercise answers for **C++ Primer, Fifth Edition / Stanley B. Lippman, Josée Lajoie, Barbara E. Moo.**
+My personal repository where I keep track of my reading notes and exercise source code for technical books.
 
-The source code created using **CLion** and **Apple clang**, but should work with other comparable IDEs and compilers.
+## 📚 My Library
+
+* 📗 [C++ Primer, Fifth Edition](cpp-primer) by Stanley B. Lippman, Josée Lajoie, Barbara E. Moo.
