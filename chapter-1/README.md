@@ -11,7 +11,7 @@
 ### [Exercise 1.2](exercise-1.2/main.cpp)
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 $ ./a.out
 $ echo $?
 255
@@ -43,7 +43,7 @@ int main() { return 0; }
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:2:18: warning: '/*' within block comment [-Wcomment]
  * comment pairs /* */ cannot nest.
                  ^
@@ -149,7 +149,7 @@ int main( {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:1:1: error: main cannot be declared as global variable
 int main( {
 ^
@@ -175,7 +175,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:4:46: error: expected ';' after expression
   std::cout << "Read each file." << std::endl:
                                              ^
@@ -196,7 +196,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:5:22: error: expected ';' after expression
   std::cout << Update master. << std::endl;
                      ^
@@ -227,7 +227,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:6:35: error: expected ';' after expression
   std::cout << "Write new master." std::endl;
                                   ^
@@ -255,7 +255,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:7:11: error: expected ';' after return statement
   return 0
           ^
@@ -277,7 +277,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp           
+$ g++ main.cpp           
 main.cpp:6:13: error: no matching function for call to 'add'
   int sum = add("hello", "world");
             ^~~
@@ -302,7 +302,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:5:15: error: use of undeclared identifier 'v'
   std::cin >> v >> v2;
               ^
@@ -323,7 +323,7 @@ int main() {
 ```
 
 ```console
-$ c++ main.cpp
+$ g++ main.cpp
 main.cpp:6:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
   cout << v1 + v2 << std::endl;
   ^~~~
@@ -345,12 +345,10 @@ extern _LIBCPP_FUNC_VIS ostream cout;
 ### [Exercise 1.18](exercise-1.18/main.cpp)
 
 ```console
-$ c++ main.cpp
-$ ./a.out
-1 1 1 1 1
+$ g++ main.cpp
+$ echo 1 1 1 1 1 | ./a.out
 1 occurs 5 times
-$ ./a.out
-1 2 3 4 5
+$ echo 1 2 3 4 5 | ./a.out
 1 occurs 1 times
 2 occurs 1 times
 3 occurs 1 times
