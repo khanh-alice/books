@@ -365,3 +365,14 @@ $ ./a.out
 ### [Exercise 1.21](exercise-1.21/main.cpp)
 
 ### [Exercise 1.22](exercise-1.22/main.cpp)
+
+### [Exercise 1.23](exercise-1.23/main.cpp)
+
+### Exercise 1.24
+
+```console
+$ g++ -std=c++11 main.cpp
+$ echo 0-201-70353-X 4 24.99 0-201-78345-X 3 20.00 0-201-78345-X 2 25.00 | ./a.out
+0-201-70353-X occurs 1 times
+0-201-78345-X occurs 2 times
+```
