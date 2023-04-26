@@ -363,3 +363,5 @@ $ ./a.out
 ### [Exercise 1.20](exercise-1.20/main.cpp)
 
 ### [Exercise 1.21](exercise-1.21/main.cpp)
+
+### [Exercise 1.22](exercise-1.22/main.cpp)
