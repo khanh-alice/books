@@ -341,3 +341,19 @@ extern _LIBCPP_FUNC_VIS ostream cout;
 * If the input values are all equal, the program will print once with the number of times the value was entered.
 * If there are no duplicated values, the program will print every time a new number was entered with the number of times
   of 1.
+
+### [Exercise 1.18](exercise-1.18/main.cpp)
+
+```console
+$ c++ main.cpp
+$ ./a.out
+1 1 1 1 1
+1 occurs 5 times
+$ ./a.out
+1 2 3 4 5
+1 occurs 1 times
+2 occurs 1 times
+3 occurs 1 times
+4 occurs 1 times
+5 occurs 1 times
+```
