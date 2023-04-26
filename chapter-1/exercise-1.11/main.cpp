@@ -5,17 +5,17 @@ int main() {
   int v1 = 0, v2 = 0;
   std::cin >> v1 >> v2;
 
-  int lower = v1, upper = v2;
-  if (lower > upper) {
-    lower = v2;
-    upper = v1;
-  }
-
-  std::cout << "The numbers between " << lower << " and " << upper
+  std::cout << "The numbers between " << v1 << " and " << v2
             << " are: " << std::endl;
-  while (lower <= upper) {
-    std::cout << lower << std::endl;
-    ++lower;
+  int val = v1;
+  while (val <= v2) {
+    std::cout << val << std::endl;
+    ++val;
+  }
+  val = v2;
+  while (val <= v1) {
+    std::cout << val << std::endl;
+    ++val;
   }
   return 0;
 }
