@@ -290,6 +290,7 @@ int add(int x, int y) {
 #### Declaration errors
 
 ##### error: uses "v" not "v1"
+
 ```c++
 #include <iostream>
 
@@ -334,3 +335,9 @@ extern _LIBCPP_FUNC_VIS ostream cout;
 ```
 
 ### [Exercise 1.16](exercise-1.16/main.cpp)
+
+### Exercise 1.17
+
+* If the input values are all equal, the program will print once with the number of times the value was entered.
+* If there are no duplicated values, the program will print every time a new number was entered with the number of times
+  of 1.
