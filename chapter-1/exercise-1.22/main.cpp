@@ -4,15 +4,13 @@
 
 int main() {
   Sales_item curr, total;
-  int cnt = 0;
+
+  if (!(std::cin >> total)) {
+    return -1;
+  }
 
   while (std::cin >> curr) {
-    if (cnt == 0) {
-      total = curr;
-    } else {
-      total += curr;
-    }
-    ++cnt;
+    total += curr;
   }
   std::cout << total << std::endl;
   return 0;
