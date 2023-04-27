@@ -12,3 +12,8 @@
   and negative values.
 
 * `float` and `double` are both floating-point types. `float` is usually 32 bits and `double` is usually 64 bits.
+
+### Exercise 2.2
+
+To calculate a mortgage payment, we would use `double` for the rate, principal, and payment. It is because all of these
+can be a decimal number.
