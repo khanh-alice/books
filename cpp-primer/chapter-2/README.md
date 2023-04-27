@@ -77,9 +77,20 @@ The output would be:
 ```c++
 int month = 9, day = 7;
 ```
+
 `month` and `day` are integer literals written in decimal.
 
 ```c++
 int month = 09, day = 07;
 ```
+
 `month` and `day` are integer literals written in octal. However, `09` is not a valid octal number.
+
+### Exercise 2.7
+
+|     | Literal                          | Type          | Value                                                                                                              |
+|-----|----------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------|
+| (a) | `"Who goes with F\145rgus?\012"` | `char[23]`    | `['W', 'h', 'o', ' ', 'g', 'o', 'e', 's', ' ', 'w', 'i', 't', 'h', ' ', 'F', 'e', 'r', 'g', 'u', 's', '\n', '\0']` |
+| (b) | `3.14e1L`                        | `long double` | `31.4`                                                                                                             |
+| (c) | `1024f`                          | `float`       | `error: invalid digit 'f' in decimal constant`                                                                     |
+| (d) | `3.14L`                          | `long double` | `3.14`                                                                                                             |
