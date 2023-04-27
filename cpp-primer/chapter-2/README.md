@@ -32,3 +32,42 @@ The output would be:
 ```
 
 ### [Exercise 2.4](exercise-2.4/main.cpp)
+
+### Exercise 2.5
+
+#### (a) `'a', L'a', "a", L"a"` are character and character string literals.
+
+| Literal | Type         | Value         |
+|---------|--------------|---------------|
+| `'a'`   | `char`       | `'a' `        |
+| `L'a'`  | `wchar_t`    | `'a'`         |
+| `"a"`   | `char[2]`    | `['a', '\0']` |
+| `L"a"`  | `wchar_t[2]` | `['a', '\0']` |
+
+#### (b) `10, 10u, 10L, 10uL, 012, 0xC` are integer literals.
+
+| Literal | Type            | Value |
+|---------|-----------------|-------|
+| `10`    | `int`           | `10`  |
+| `10u`   | `unsigned int`  | `10`  |
+| `10L`   | `long`          | `10`  |
+| `10uL`  | `unsigned long` | `10`  |
+| `012`   | `int`           | `10`  |
+| `0xC`   | `int`           | `12`  |
+
+#### (c) `3.14, 3.14f, 3.14L` are floating-point literals.
+
+| Literal | Type          | Value  |
+|---------|---------------|--------|
+| `3.14`  | `double`      | `3.14` |
+| `3.14f` | `float`       | `3.14` |
+| `3.14L` | `long double` | `3.14` |
+
+#### (d) `10, 10u` are integer literals. `10., 10e-2` are floating-point literals.
+
+| Literal | Type           | Value  |
+|---------|----------------|--------|
+| `10`    | `int`          | `10`   |
+| `10u`   | `unsigned int` | `10`   |
+| `10.`   | `double`       | `10.0` |
+| `10e-2` | `double`       | `0.1`  |
