@@ -94,3 +94,5 @@ int month = 09, day = 07;
 | (b) | `3.14e1L`                        | `long double` | `31.4`                                                                                                             |
 | (c) | `1024f`                          | `float`       | `error: invalid digit 'f' in decimal constant`                                                                     |
 | (d) | `3.14L`                          | `long double` | `3.14`                                                                                                             |
+
+### [Exercise 2.8](exercise-2.8/main.cpp)
