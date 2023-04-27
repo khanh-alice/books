@@ -71,3 +71,15 @@ The output would be:
 | `10u`   | `unsigned int` | `10`   |
 | `10.`   | `double`       | `10.0` |
 | `10e-2` | `double`       | `0.1`  |
+
+### Exercise 2.6
+
+```c++
+int month = 9, day = 7;
+```
+`month` and `day` are integer literals written in decimal.
+
+```c++
+int month = 09, day = 07;
+```
+`month` and `day` are integer literals written in octal. However, `09` is not a valid octal number.
