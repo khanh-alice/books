@@ -141,3 +141,11 @@ int i = 3.14 // warning: implicit conversion from 'double' to 'int' changes valu
 ```
 
 `i` is an `int` variable. This is legal but the value of `i` will be truncated to `3`.
+
+### [Exercise 2.10](exercise-2.10/main.cpp)
+
+Initial value of `global_str` and `local_str` is an empty string.
+
+Initial value of `global_int` is `0`
+
+Initial value of `local_int` is undefined.
