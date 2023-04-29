@@ -1,5 +1,11 @@
 # Chapter 2: Variables and Basic Types
 
+## Highlights
+
+> C++ is a _statically typed_ language, which means that types are checked at compile time. (p. 46)
+
+> Naming conventions are most useful when followed consistently. (p. 47)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -155,3 +161,11 @@ Initial value of `local_int` is undefined.
 * (a) `extern int ix = 1024;` is a definition.
 * (b) `int iy;` is a definition.
 * (c) `extern int iz;` is a declaration.
+
+### Exercise 2.12
+
+* (a) `int double = 3.14;` is invalid because `double` is a keyword.
+* (b) `int _;` is valid.
+* (c) `int catch-22;` is invalid because `-` is not allowed in variable name.
+* (d) `int 1_or_2 = 1;` is invalid because variable name cannot start with a digit.
+* (e) `double Double = 3.14;` is valid.
