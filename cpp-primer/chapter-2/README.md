@@ -6,6 +6,9 @@
 
 > Naming conventions are most useful when followed consistently. (p. 47)
 
+> It is almost always a bad idea to define a local variable with the same
+name as a global variable that the function uses or might use. (p. 49)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -169,3 +172,7 @@ Initial value of `local_int` is undefined.
 * (c) `int catch-22;` is invalid because `-` is not allowed in variable name.
 * (d) `int 1_or_2 = 1;` is invalid because variable name cannot start with a digit.
 * (e) `double Double = 3.14;` is valid.
+
+### [Exercise 2.13](exercise-2.13/main.cpp)
+
+`j` is 100.
