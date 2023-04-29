@@ -106,3 +106,38 @@ int month = 09, day = 07;
 | (d) | `3.14L`                          | `long double` | `3.14`                                                                                                             |
 
 ### [Exercise 2.8](exercise-2.8/main.cpp)
+
+### [Exercise 2.9](exercise-2.9/main.cpp)
+
+#### (a)
+
+```c++
+std::cin >> int input_value; // error: expected '(' for function-style cast or type construction
+```
+
+`input_value` is an `int` variable. This is illegal because we need to define the variable before we can use it.
+
+#### (b)
+
+```c++
+int i = { 3.14 }; // error: type 'double' cannot be narrowed to 'int' in initializer list
+```
+
+`i` is an `int` variable. This is illegal because list initialization does not allow narrowing conversions from `double`
+to `int`.
+
+#### (c)
+
+```c++
+double salary = wage = 9999.99; //  error: use of undeclared identifier 'wage'
+```
+
+`salary` is a `double` variable. This is illegal because `wage` is not defined.
+
+#### (d)
+
+```c++
+int i = 3.14 // warning: implicit conversion from 'double' to 'int' changes value from 3.14 to 3
+```
+
+`i` is an `int` variable. This is legal but the value of `i` will be truncated to `3`.
