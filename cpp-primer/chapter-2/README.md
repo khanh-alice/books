@@ -149,3 +149,9 @@ Initial value of `global_str` and `local_str` is an empty string.
 Initial value of `global_int` is `0`
 
 Initial value of `local_int` is undefined.
+
+### Exercise 2.11
+
+* (a) `extern int ix = 1024;` is a definition.
+* (b) `int iy;` is a definition.
+* (c) `extern int iz;` is a declaration.
