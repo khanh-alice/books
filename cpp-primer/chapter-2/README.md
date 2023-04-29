@@ -176,3 +176,7 @@ Initial value of `local_int` is undefined.
 ### [Exercise 2.13](exercise-2.13/main.cpp)
 
 `j` is 100.
+
+### [Exercise 2.14](exercise-2.14/main.cpp)
+
+The program is legal. It will print `100 45`.
