@@ -213,3 +213,10 @@ The program is legal. It will print `100 45`.
 The code will print `10 10`.
 
 ### [Exercise 2.18](exercise-2.18/main.cpp)
+
+### Exercise 2.19
+
+* Pointers can be set to null (i.e., they don't point to any object), while references always refer to an object.
+* Pointers can be assigned to another object, while references can only refer to the object they were initialized to.
+* Pointers are declared using the `*` symbol, while references are declared using the `&` symbol.
+
