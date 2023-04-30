@@ -231,3 +231,8 @@ The code will print `10 10`.
 * (a) `double* dp = &i;` is illegal because `i` is an `int` variable.
 * (b) `int *ip = i;` is illegal because we cannot assign an `int` variable to a pointer.
 * (c) `int *p = &i;` is legal.
+
+### [Exercise 2.22](exercise-2.22/main.cpp)
+
+* (a) `if (p)` checks if `p` is not a null pointer.
+* (b) `if (*p)` checks if `p` points to an object that is not `0`.
