@@ -225,3 +225,9 @@ The code will print `10 10`.
 * `p1` is declared as a pointer to `int` and initialized to address of `i`.
 * `*p1` means the object that `p1` points to, which is `i`, so `*p1 = *p1 * *p1` is equivalent to `i = i * i`, which
   means  `i` is now `42 * 42 = 1764`.
+
+### Exercise 2.21
+
+* (a) `double* dp = &i;` is illegal because `i` is an `int` variable.
+* (b) `int *ip = i;` is illegal because we cannot assign an `int` variable to a pointer.
+* (c) `int *p = &i;` is legal.
