@@ -211,3 +211,5 @@ The program is legal. It will print `100 45`.
 ### [Exercise 2.17](exercise-2.17/main.cpp)
 
 The code will print `10 10`.
+
+### [Exercise 2.18](exercise-2.18/main.cpp)
