@@ -200,3 +200,7 @@ The program is legal. It will print `100 45`.
 * (b) `r2 = r1;` is valid. Value `0` of variable `i` will be assigned to variable `d`.
 * (c) `i = r2;` is valid. Value `0.0` of variable `d` will be truncated to `0` and assigned to variable `i`.
 * (d) `r1 = d;` is valid. Value `0.0` of variable `d` will be assigned to variable `i`.
+
+### [Exercise 2.17](exercise-2.17/main.cpp)
+
+The code will print `10 10`.
