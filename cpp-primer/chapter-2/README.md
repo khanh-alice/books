@@ -186,3 +186,10 @@ Initial value of `local_int` is undefined.
 ### [Exercise 2.14](exercise-2.14/main.cpp)
 
 The program is legal. It will print `100 45`.
+
+### Exercise 2.15
+
+* (a) `int ival = 1.01;` is valid but the value will be truncated to `1`.
+* (b) `int &rval1 = 1.01;` is invalid because we cannot bind a reference to a literal.
+* (c) `int &rval2 = ival;` is valid assuming `ival` is an `int` variable.
+* (d) `int &rval3;` is invalid because we need to initialize a reference.
