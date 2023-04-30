@@ -33,7 +33,7 @@
 To calculate a mortgage payment, we would use `double` for the rate, principal, and payment. It is because all of these
 can be a decimal number.
 
-### Exercise 2.3
+### [Exercise 2.3](exercise-2.3/main.cpp)
 
 The output would be:
 
