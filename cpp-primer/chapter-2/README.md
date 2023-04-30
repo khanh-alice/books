@@ -6,8 +6,14 @@
 
 > Naming conventions are most useful when followed consistently. (p. 47)
 
-> It is almost always a bad idea to define a local variable with the same
-name as a global variable that the function uses or might use. (p. 49)
+> It is almost always a bad idea to define a local variable with the same name as a global variable that the function
+> uses or might use. (p. 49)
+ 
+> **A Reference is an Alias**
+> 
+> A reference is not an object. Instead, a reference is _just another name for an already existing object_. (p. 50)
+
+> Because references are not objects, we may not define a reference to a reference. (p. 51)
 
 ## Exercises
 
