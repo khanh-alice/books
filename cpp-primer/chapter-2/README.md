@@ -193,3 +193,10 @@ The program is legal. It will print `100 45`.
 * (b) `int &rval1 = 1.01;` is invalid because we cannot bind a reference to a literal.
 * (c) `int &rval2 = ival;` is valid assuming `ival` is an `int` variable.
 * (d) `int &rval3;` is invalid because we need to initialize a reference.
+
+### [Exercise 2.16](exercise-2.16/main.cpp)
+
+* (a) `r2 = 3.14159;` is valid. `3.14159` will be assigned to variable `d`.
+* (b) `r2 = r1;` is valid. Value `0` of variable `i` will be assigned to variable `d`.
+* (c) `i = r2;` is valid. Value `0.0` of variable `d` will be truncated to `0` and assigned to variable `i`.
+* (d) `r1 = d;` is valid. Value `0.0` of variable `d` will be assigned to variable `i`.
