@@ -236,3 +236,17 @@ The code will print `10 10`.
 
 * (a) `if (p)` checks if `p` is not a null pointer.
 * (b) `if (*p)` checks if `p` points to an object that is not `0`.
+
+### Exercise 2.23
+
+No, it is not possible to determine whether a pointer `p` points to a valid object or not with certainty.
+
+A pointer simply holds a memory address which could point to a valid object or to an invalid memory location.
+Dereference an invalid pointer (i.e., a pointer that does not point to a valid object) will result in undefined
+behavior, which can manifest as a runtime error, program crash, or other unexpected behavior.
+
+### Exercise 2.24
+
+It is because `lp` is a pointer to `long` so it cannot point to type `int` of variable `i`.
+
+Meanwhile `p` is a pointer to `void` so it can point to any type of object.
