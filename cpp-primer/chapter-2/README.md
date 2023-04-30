@@ -8,12 +8,19 @@
 
 > It is almost always a bad idea to define a local variable with the same name as a global variable that the function
 > uses or might use. (p. 49)
- 
+
 > **A Reference is an Alias**
-> 
+>
 > A reference is not an object. Instead, a reference is _just another name for an already existing object_. (p. 50)
 
 > Because references are not objects, we may not define a reference to a reference. (p. 51)
+
+> Because references are not objects, they don't have addresses. Hence, we may not define a pointer to a reference.
+> (p. 52)
+
+> **Advice: Initialize All Pointers**
+>
+> Uninitialized pointers are a common source of run-time errors. (p. 54)
 
 ## Exercises
 
