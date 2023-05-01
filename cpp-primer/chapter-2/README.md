@@ -267,3 +267,9 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
   * `ip` is a **pointer** to `int` with uninitialized value.
   * `ip2` is an `int` **variable** with uninitialized value.
 
+### Exercise 2.26
+
+* (a) `const int buf;` is illegal because `const` variables must be initialized.
+* (b) `int cnt = 0;` is legal.
+* (c) `const int sz = cnt;` is legal.
+* (d) `++cnt; ++sz;` is illegal because `sz` is a `const` variable.
