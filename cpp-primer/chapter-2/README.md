@@ -311,3 +311,16 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
 * (d) `p3 = &ic;` is **illegal** because `p3` is a `const` pointer, so it cannot be assigned to another object.
 * (e) `p2 = p1;` is **illegal** because `p2` is a `const` pointer, so it cannot be assigned to another object.
 * (f) `ic = *p3;` is **illegal** because `ic` is a `const` variable, so it cannot be assigned to another object.
+
+### Exercise 2.30
+
+* `const int v2 = 0; int v1 = v2;`
+  * `v2` has **top-level** `const`.
+  * `v1` has no `const` qualifier.
+* `int *p1 = &v1, &r1 = v1;`
+  * `p1` has no `const` qualifier.
+  * `r1` has no `const` qualifier.
+* `const int *p2 = &v2, *const p3 = &i, &r2 = v2;`
+  * `p2` has **low-level** `const`.
+  * `p3` has both **top-level** and **low-level** `const`.
+  * `r2` has **low-level** `const`.
