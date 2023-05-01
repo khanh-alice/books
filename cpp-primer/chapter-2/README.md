@@ -285,9 +285,17 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
 * (c) `const int i = -1, &r = 0;` is **legal** because `i` is a `const` variable and `r` is a `const` reference to `int`
   so it can be initialized with a literal.
 * (d) `const int *const p3 = &i2;` is **legal** because `p3` is a `const` pointer to `const int` so it can point to a
-  `const int` variable `i2`.
-* (e) `const int *p1 = &i2;` is **legal** because `p1` is a pointer to `const int` so it can point to a `const int`
+  `int` variable `i2`.
+* (e) `const int *p1 = &i2;` is **legal** because `p1` is a pointer to `const int` so it can point to a `int`
   variable `i2`.
 * (f) `const int &const r2;` is **illegal** because `const` reference must be initialized.
 * (g) `const int i2 = i, &r = i;` is **legal** because `i2` is a `const` variable and `r` is a `const` reference
   to `int` so it can be initialized with a `int` variable `i`.
+
+### Exercise 2.28
+
+* (a) `int i, *const cp;` is **illegal** because `cp` is a `const` pointer, so it must be initialized.
+* (b) `int *p1, *const p2;` is **illegal** because `p2` is a `const` pointer, so it must be initialized.
+* (c) `const int ic, &r = ic;` is **illegal** because `ic` is a `const` variable, so it must be initialized.
+* (d) `const int *const p3;` is **illegal** because `p3` is a `const` pointer, so it must be initialized.
+* (e) `const int *p;` is **legal** because `p` is a pointer to `const int`, so it doesn't need to be initialized.
