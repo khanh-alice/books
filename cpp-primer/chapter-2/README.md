@@ -324,3 +324,13 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
   * `p2` has **low-level** `const`.
   * `p3` has both **top-level** and **low-level** `const`.
   * `r2` has **low-level** `const`.
+
+### Exercise 2.31
+
+* `r1 = v2;` is **legal** because `v2` has top-level `const`, so `const` qualifier will be ignored when assigning
+  variable `v2` to reference `r1`.
+* `p1 = p2;` is **illegal** because `p2` has low-level `const`, so it cannot be assigned to non-`const` pointer `p1`.
+* `p2 = p1;` is **legal** because `p1` has no `const` qualifier, so it can be assigned to `const` pointer `p2`.
+* `p1 = p3;` is **illegal** because `p3` has both top-level and low-level `const`, so it cannot be assigned to
+  non-`const` pointer `p1`.
+* `p2 = p3;` is **legal** because `p2` and `p3` have the same low-level `const`, so `p2` can be assigned to `p3`.
