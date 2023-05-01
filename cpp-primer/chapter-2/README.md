@@ -299,3 +299,15 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
 * (c) `const int ic, &r = ic;` is **illegal** because `ic` is a `const` variable, so it must be initialized.
 * (d) `const int *const p3;` is **illegal** because `p3` is a `const` pointer, so it must be initialized.
 * (e) `const int *p;` is **legal** because `p` is a pointer to `const int`, so it doesn't need to be initialized.
+
+### Exercise 2.29
+
+* (a) `i = ic;` is **legal** because `i` is a non-`const` variable and `ic` is a `const` variable, so `i` can be
+  initialized with `ic`.
+* (b) `p1 = p3;` is **illegal** because `p1` is a pointer to `int` and `p3` is a pointer to `const int`, so `p1` cannot
+  be initialized with `p3`.
+* (c) `p1 = &ic;` is **illegal** because `p1` is a pointer to `int` and `ic` is a `const int` variable, so `p1` cannot
+  be initialized with `ic`.
+* (d) `p3 = &ic;` is **illegal** because `p3` is a `const` pointer, so it cannot be assigned to another object.
+* (e) `p2 = p1;` is **illegal** because `p2` is a `const` pointer, so it cannot be assigned to another object.
+* (f) `ic = *p3;` is **illegal** because `ic` is a `const` variable, so it cannot be assigned to another object.
