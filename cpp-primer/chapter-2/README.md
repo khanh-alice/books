@@ -25,6 +25,9 @@
 > It can be easier to understand complicated pointer or reference declarations if you read them from right to left.
 > (p. 58)
 
+> It may be helpful to think of pointers and references to `const` as pointers or references "that _think_ they point or
+> refer to `const`." (p. 63)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -273,3 +276,18 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
 * (b) `int cnt = 0;` is legal.
 * (c) `const int sz = cnt;` is legal.
 * (d) `++cnt; ++sz;` is illegal because `sz` is a `const` variable.
+
+### Exercise 2.27
+
+* (a) `int i = -1, &r = 0;` is **illegal** because we cannot bind a reference to a literal.
+* (b) `int *const p2 = &i2;` is **legal** because `p2` is a `const` pointer to `int` so it can point to an `int`
+  variable `i2`.
+* (c) `const int i = -1, &r = 0;` is **legal** because `i` is a `const` variable and `r` is a `const` reference to `int`
+  so it can be initialized with a literal.
+* (d) `const int *const p3 = &i2;` is **legal** because `p3` is a `const` pointer to `const int` so it can point to a
+  `const int` variable `i2`.
+* (e) `const int *p1 = &i2;` is **legal** because `p1` is a pointer to `const int` so it can point to a `const int`
+  variable `i2`.
+* (f) `const int &const r2;` is **illegal** because `const` reference must be initialized.
+* (g) `const int i2 = i, &r = i;` is **legal** because `i2` is a `const` variable and `r` is a `const` reference
+  to `int` so it can be initialized with a `int` variable `i`.
