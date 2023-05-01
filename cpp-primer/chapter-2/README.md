@@ -22,6 +22,9 @@
 >
 > Uninitialized pointers are a common source of run-time errors. (p. 54)
 
+> It can be easier to understand complicated pointer or reference declarations if you read them from right to left.
+> (p. 58)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -250,3 +253,17 @@ behavior, which can manifest as a runtime error, program crash, or other unexpec
 It is because `lp` is a pointer to `long` so it cannot point to type `int` of variable `i`.
 
 Meanwhile `p` is a pointer to `void` so it can point to any type of object.
+
+### Exercise 2.25
+
+* (a)
+  * `ip` is a **pointer** to `int` with uninitialized value.
+  * `i` is an `int` **variable** with uninitialized value.
+  * `r` is a **reference** to `int` with initialized value of `i`.
+* (b)
+  * `i` is an `int` **variable** with uninitialized value.
+  * `ip` is a **pointer** to `int` with initialized value of `0`.
+* (c)
+  * `ip` is a **pointer** to `int` with uninitialized value.
+  * `ip2` is an `int` **variable** with uninitialized value.
+
