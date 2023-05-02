@@ -31,6 +31,14 @@
 > A **constant expression** is an expression whose value cannot change and that can be evaluated at compile time.
 > (p. 65)
 
+> Generally speaking, `decltype` returns a reference type for expressions that yield objects that can stand on the
+> left-hand side of the assignment.
+>
+> Remember that `decltype((`_variable_`))` (note, double parenthesis) is always a reference type, but `decltype(`
+_variable_`)` is a reference type only if _variable_ is a reference.
+>
+> (p. 71)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -363,3 +371,8 @@ int null = 0, *p = &null;
 * `p` is `const int*`.
 * `j2` is `const int`.
 * `k2` is `const int&`.
+
+### [Exercise 2.36](exercise-2.36/main.cpp)
+
+* `a`, `b` and `c` are `int` variables. `d` is `int&`.
+* When the code finishes, all variables are `4`.
