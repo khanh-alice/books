@@ -28,6 +28,9 @@
 > It may be helpful to think of pointers and references to `const` as pointers or references "that _think_ they point or
 > refer to `const`." (p. 63)
 
+> A **constant expression** is an expression whose value cannot change and that can be evaluated at compile time.
+> (p. 65)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -334,3 +337,10 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
 * `p1 = p3;` is **illegal** because `p3` has both top-level and low-level `const`, so it cannot be assigned to
   non-`const` pointer `p1`.
 * `p2 = p3;` is **legal** because `p2` and `p3` have the same low-level `const`, so `p2` can be assigned to `p3`.
+
+### Exercise 2.32
+
+`int null = 0, *p = null;` is **illegal** because `p` is a pointer to `int` and `null` is an `int` variable, so `p`
+cannot be initialized with `null`.
+
+The legal code would be `int null = 0, *p = &null;`.
