@@ -355,3 +355,11 @@ int null = 0, *p = &null;
 * `g = 42;` is **illegal** because `g` is a reference to `const int`, so it cannot be assigned to another object.
 
 ### [Exercise 2.34](exercise-2.34/main.cpp)
+
+### [Exercise 2.35](exercise-2.35/main.cpp)
+
+* `j` is `int`.
+* `k` is `const int&`.
+* `p` is `const int*`.
+* `j2` is `const int`.
+* `k2` is `const int&`.
