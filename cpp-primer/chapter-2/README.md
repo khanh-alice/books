@@ -341,6 +341,17 @@ Meanwhile `p` is a pointer to `void` so it can point to any type of object.
 ### Exercise 2.32
 
 `int null = 0, *p = null;` is **illegal** because `p` is a pointer to `int` and `null` is an `int` variable, so `p`
-cannot be initialized with `null`.
+cannot be initialized with `null`. The legal code would be:
 
-The legal code would be `int null = 0, *p = &null;`.
+```c++
+int null = 0, *p = &null;
+```
+
+### Exercise 2.33
+
+* `a = 42; b = 42; c = 42;` are **legal** because they are `int` variables.
+* `d = 42;` is **illegal** because `d` is a pointer to `int`, so it cannot be assigned to an `int` value.
+* `e = 42;` is **illegal** because `e` is a pointer to `const int`, so it cannot be assigned to an `int` value.
+* `g = 42;` is **illegal** because `g` is a reference to `const int`, so it cannot be assigned to another object.
+
+### [Exercise 2.34](exercise-2.34/main.cpp)
