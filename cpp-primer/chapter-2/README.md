@@ -366,13 +366,28 @@ int null = 0, *p = &null;
 
 ### [Exercise 2.35](exercise-2.35/main.cpp)
 
-* `j` is `int`.
-* `k` is `const int&`.
-* `p` is `const int*`.
-* `j2` is `const int`.
-* `k2` is `const int&`.
+| Variable | Type         |
+|----------|--------------|
+| `j`      | `int`        |
+| `k`      | `const int&` |
+| `p`      | `const int*` |
+| `j2`     | `const int`  |
+| `k2`     | `const int&` |
 
 ### [Exercise 2.36](exercise-2.36/main.cpp)
 
-* `a`, `b` and `c` are `int` variables. `d` is `int&`.
-* When the code finishes, all variables are `4`.
+| Variable | Type   | Value |
+|----------|--------|-------|
+| `a`      | `int`  | `4`   |
+| `b`      | `int`  | `4`   |
+| `c`      | `int`  | `4`   |
+| `d`      | `int&` | `4`   |
+
+### [Exercise 2.37](exercise-2.37/main.cpp)
+
+| Variable | Type   | Value |
+|----------|--------|-------|
+| `a`      | `int`  | `3`   |
+| `b`      | `int`  | `4`   |
+| `c`      | `int`  | `3`   |
+| `d`      | `int&` | `3`   |
