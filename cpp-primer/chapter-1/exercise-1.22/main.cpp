@@ -6,6 +6,7 @@ int main() {
   Sales_item curr, total;
 
   if (!(std::cin >> total)) {
+    std::cerr << "No data?!" << std::endl;
     return -1;
   }
 

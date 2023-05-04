@@ -426,3 +426,11 @@ struct Foo { /* empty */ } // Note: no semicolon
 ```
 
 ### [Exercise 2.40](exercise-2.40/main.cpp)
+
+### Exercise 2.41
+
+* [Exercise 1.20](exercise-2.41-1.20/main.cpp)
+* [Exercise 1.21](exercise-2.41-1.21/main.cpp)
+* [Exercise 1.22](exercise-2.41-1.22/main.cpp)
+* [Exercise 1.23](exercise-2.41-1.23/main.cpp)
+* [Exercise 1.25](exercise-2.41-1.25/main.cpp)
