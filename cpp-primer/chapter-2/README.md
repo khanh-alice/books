@@ -396,7 +396,7 @@ int null = 0, *p = &null;
 
 ### Exercise 2.38
 
-* `decltype(a)` is a type specifier that returns the type of expression. It can be used to deduce the type a variable, a
+* `decltype` is a type specifier that returns the type of expression. It can be used to deduce the type a variable, a
   function, or an expression.
 * `auto` is a type specifier that instructs the compiler to deduce the type of variable based on the initializer
   expression.
