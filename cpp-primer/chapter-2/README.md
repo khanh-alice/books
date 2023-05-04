@@ -39,6 +39,8 @@ _variable_`)` is a reference type only if _variable_ is a reference.
 >
 > (p. 71)
 
+> Header should have guards, even if they aren't (yet) included by another header. (p. 77)
+
 ## Exercises
 
 ### Exercise 2.1
@@ -434,3 +436,11 @@ struct Foo { /* empty */ } // Note: no semicolon
 * [Exercise 1.22](exercise-2.41-1.22/main.cpp)
 * [Exercise 1.23](exercise-2.41-1.23/main.cpp)
 * [Exercise 1.25](exercise-2.41-1.25/main.cpp)
+
+### Exercise 2.42
+
+* [Exercise 1.20](exercise-2.42-1.20/main.cpp)
+* [Exercise 1.21](exercise-2.42-1.21/main.cpp)
+* [Exercise 1.22](exercise-2.42-1.22/main.cpp)
+* [Exercise 1.23](exercise-2.42-1.23/main.cpp)
+* [Exercise 1.25](exercise-2.42-1.25/main.cpp)
