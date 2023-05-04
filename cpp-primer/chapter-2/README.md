@@ -424,3 +424,5 @@ struct Foo { /* empty */ } // Note: no semicolon
                           ;
 1 error generated.
 ```
+
+### [Exercise 2.40](exercise-2.40/main.cpp)
