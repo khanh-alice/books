@@ -413,3 +413,14 @@ int x = 42;
 auto y = x;            // y is an int
 decltype(y = x) z = x; // z is an int&
 ```
+
+### Exercise 2.39
+
+```console
+$ g++ main.cpp
+main.cpp:1:27: error: expected ';' after struct
+struct Foo { /* empty */ } // Note: no semicolon
+                          ^
+                          ;
+1 error generated.
+```
