@@ -28,3 +28,16 @@
 
 1. [Exercise 3.2.1](exercise-3.2.1/main.cpp)
 2. [Exercise 3.2.2](exercise-3.2.2/main.cpp)
+
+### Exercise 3.3
+
+> The `string` input operator reads and discards any leading whitespace (e.g., spaces, newlines, tabs). It then reads
+> characters until the next whitespace character is encountered.
+>
+> (p. 86)
+
+> The `getline` function reads the given stream up to and including the first newline and stores what it read - not
+> including the newline - in its `string` argument. After `getline` encounters a newline, even if it is the first
+> character in the input, it stops reading and returns.
+>
+> (p. 87)
