@@ -41,3 +41,8 @@
 > character in the input, it stops reading and returns.
 >
 > (p. 87)
+
+### Exercise 3.4
+
+1. [Exercise 3.4.1](exercise-3.4.1/main.cpp)
+2. [Exercise 3.4.2](exercise-3.4.2/main.cpp)
