@@ -74,3 +74,7 @@ We would prefer to use a range `for` because we need to process every character 
 The program is not valid. The string `s` is empty, so `s[0]` is undefined.
 
 ### [Exercise 3.10](exercise-3.10/main.cpp)
+
+### Exercise 3.11
+
+The range `for` statement is legal. `c` is a `const char&`.
