@@ -11,6 +11,10 @@
 > For historical reasons, and for compatibility with C, string literals are `not` standard library `string`s. It is
 > important to remember that these types differ when you use string literals and library `string`s. (p. 90)
 
+> The result of using an out-of-range subscript is undefined.
+> 
+> (p. 95)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -51,3 +55,5 @@
 
 1. [Exercise 3.5.1](exercise-3.5.1/main.cpp)
 2. [Exercise 3.5.2](exercise-3.5.2/main.cpp)
+
+### [Exercise 3.6](exercise-3.6/main.cpp)
