@@ -68,3 +68,7 @@ If we define the loop control variable as type `char`, the `string` will remain 
 2. [Exercise 3.8.2](exercise-3.8.2/main.cpp)
 
 We would prefer to use a range `for` because we need to process every character in the `string`.
+
+### Exercise 3.9
+
+The program is not valid. The string `s` is empty, so `s[0]` is undefined.
