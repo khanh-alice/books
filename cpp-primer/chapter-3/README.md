@@ -57,3 +57,7 @@
 2. [Exercise 3.5.2](exercise-3.5.2/main.cpp)
 
 ### [Exercise 3.6](exercise-3.6/main.cpp)
+
+### [Exercise 3.7](exercise-3.7/main.cpp)
+
+If we  define the loop control variable as type `char`, the `string` will remain unchanged.
