@@ -12,7 +12,7 @@
 > important to remember that these types differ when you use string literals and library `string`s. (p. 90)
 
 > The result of using an out-of-range subscript is undefined.
-> 
+>
 > (p. 95)
 
 ## Exercises
@@ -60,4 +60,11 @@
 
 ### [Exercise 3.7](exercise-3.7/main.cpp)
 
-If we  define the loop control variable as type `char`, the `string` will remain unchanged.
+If we define the loop control variable as type `char`, the `string` will remain unchanged.
+
+### Exercise 3.8
+
+1. [Exercise 3.8.1](exercise-3.8.1/main.cpp)
+2. [Exercise 3.8.2](exercise-3.8.2/main.cpp)
+
+We would prefer to use a range `for` because we need to process every character in the `string`.
