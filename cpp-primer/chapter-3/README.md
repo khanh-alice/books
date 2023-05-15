@@ -72,3 +72,5 @@ We would prefer to use a range `for` because we need to process every character 
 ### Exercise 3.9
 
 The program is not valid. The string `s` is empty, so `s[0]` is undefined.
+
+### [Exercise 3.10](exercise-3.10/main.cpp)
