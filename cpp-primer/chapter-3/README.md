@@ -78,3 +78,11 @@ The program is not valid. The string `s` is empty, so `s[0]` is undefined.
 ### Exercise 3.11
 
 The range `for` statement is legal. `c` is a `const char&`.
+
+### Exercise 3.12
+
+* (a) `vector<vector<int>> ivec;` is legal. `ivec` is a `vector` of `vector`s of `int`s.
+* (b) `vector<string> svec = ivec;` is illegal. `svec` is a `vector` of `string`s, but `ivec` is a `vector` of `vector`s
+  of `int`s.
+* (c) `vector<string> svec(10, "null");` is legal. `svec` is a `vector` of `string`s with 10 elements with
+  value `"null"`.
