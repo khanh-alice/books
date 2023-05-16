@@ -86,3 +86,13 @@ The range `for` statement is legal. `c` is a `const char&`.
   of `int`s.
 * (c) `vector<string> svec(10, "null");` is legal. `svec` is a `vector` of `string`s with 10 elements with
   value `"null"`.
+
+### Exercise 3.13
+
+* (a) `vector<int> v1;` is empty.
+* (b) `vector<int> v2(10);` has 10 elements with value `0`.
+* (c) `vector<int> v3(10, 42);` has 10 elements with value `42`.
+* (d) `vector<int> v4{10};` has 1 element with value `10`.
+* (e) `vector<int> v5{10, 42};` has 2 elements with values `10` and `42`.
+* (f) `vector<string> v6{10};` has 10 elements with value `""`.
+* (g) `vector<string> v7{10, "hi"};` has 10 elements with value `"hi"`.
