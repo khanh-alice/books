@@ -2,18 +2,32 @@
 
 ## Highlights
 
-> Code inside headers ordinarily should not use `using` declarations. The reason is that the contents of a header are
-> copied into the including program's text. (p. 83)
+> Code inside headers ordinarily should not use `using` declarations.
+> The reason is that the contents of a header are copied into the including program's text.
+>
+> (p. 83)
 
 > You can avoid problems due to conversion between `unsigned` and `int` by not using `int`s in expressions that
-> use `size()`. (p. 88)
+> use `size()`.
+>
+> (p. 88)
 
-> For historical reasons, and for compatibility with C, string literals are `not` standard library `string`s. It is
-> important to remember that these types differ when you use string literals and library `string`s. (p. 90)
+> For historical reasons, and for compatibility with C, string literals are `not` standard library `string`s.
+> It is important to remember that these types differ when you use string literals and library `string`s.
+>
+> (p. 90)
 
 > The result of using an out-of-range subscript is undefined.
 >
 > (p. 95)
+
+> Because `vector`s grow efficiently, it is often unnecessary - and can result in poorer performance - to define
+> a `vector` of a specific size.
+> The exception to this rule is if _all_ the elements actually need the same value.
+> If difference element values are needed, it is usually more efficient to define an empty `vector` and add elements as
+> the values we need become known at run time.
+>
+> (p. 101)
 
 ## Exercises
 
@@ -96,3 +110,7 @@ The range `for` statement is legal. `c` is a `const char&`.
 * (e) `vector<int> v5{10, 42};` has 2 elements with values `10` and `42`.
 * (f) `vector<string> v6{10};` has 10 elements with value `""`.
 * (g) `vector<string> v7{10, "hi"};` has 10 elements with value `"hi"`.
+
+### [Exercise 3.14](exercise-3.14/main.cpp)
+
+### [Exercise 3.15](exercise-3.15/main.cpp)
