@@ -29,6 +29,17 @@
 >
 > (p. 101)
 
+> It is crucially important to understand that we may use the subscript operator (the `[]` operator) to fetch only
+> elements that actually exist.
+>
+> It is an error to subscript an element that doesn't exist, but it is an error that the compiler is unlikely to detect.
+> Instead, the value we get at run time is undefined.
+>
+> A good way to ensure that subscripts are in range is to avoid subscripting altogether by using a range `for` whenever
+> possible.
+> 
+> (p. 105)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -114,3 +125,5 @@ The range `for` statement is legal. `c` is a `const char&`.
 ### [Exercise 3.14](exercise-3.14/main.cpp)
 
 ### [Exercise 3.15](exercise-3.15/main.cpp)
+
+### [Exercise 3.16](exercise-3.16/main.cpp)
