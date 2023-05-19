@@ -127,3 +127,5 @@ The range `for` statement is legal. `c` is a `const char&`.
 ### [Exercise 3.15](exercise-3.15/main.cpp)
 
 ### [Exercise 3.16](exercise-3.16/main.cpp)
+
+### [Exercise 3.17](exercise-3.17/main.cpp)
