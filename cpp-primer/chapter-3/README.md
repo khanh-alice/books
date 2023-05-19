@@ -129,3 +129,12 @@ The range `for` statement is legal. `c` is a `const char&`.
 ### [Exercise 3.16](exercise-3.16/main.cpp)
 
 ### [Exercise 3.17](exercise-3.17/main.cpp)
+
+### Exercise 3.18
+
+The program is illegal because vector `ivec` is empty, so we cannot use `ivec[0]`. We should use `push_back` instead.
+
+```cpp
+vector<int> ivec;
+ivec.push_back(42);
+```
