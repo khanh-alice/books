@@ -37,7 +37,7 @@
 >
 > A good way to ensure that subscripts are in range is to avoid subscripting altogether by using a range `for` whenever
 > possible.
-> 
+>
 > (p. 105)
 
 ## Exercises
@@ -138,3 +138,28 @@ The program is illegal because vector `ivec` is empty, so we cannot use `ivec[0]
 vector<int> ivec;
 ivec.push_back(42);
 ```
+
+### Exercise 3.19
+
+1. Use **value initialization** to create a `vector` with 10 elements, each with the value `42`.
+
+  ```cpp
+  vector<int> v1(10, 42);
+  ```
+
+2. Use **list initialization** to create a `vector` with 10 elements, each with the value `42`.
+
+  ```cpp
+  vector<int> v2{42, 42, 42, 42, 42, 42, 42, 42, 42, 42};
+  ```
+
+3. Use `push_back` to add the value `42` to the `vector` until it has 10 elements.
+
+  ```cpp
+  vector<int> v3;
+  for (int i = 0; i < 10; ++i) {
+    v3.push_back(42);
+  }
+  ```
+
+Using value initialization is preferred because all elements have the same value.
