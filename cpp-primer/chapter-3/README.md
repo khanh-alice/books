@@ -172,3 +172,5 @@ Using value initialization is preferred because all elements have the same value
 ### [Exercise 3.21](exercise-3.21/main.cpp)
 
 ### [Exercise 3.22](exercise-3.22/main.cpp)
+
+### [Exercise 3.23](exercise-3.23/main.cpp)
