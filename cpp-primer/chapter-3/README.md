@@ -179,3 +179,5 @@ Using value initialization is preferred because all elements have the same value
 
 * [Exercise 3.24.1](exercise-3.24.1/main.cpp)
 * [Exercise 3.24.2](exercise-3.24.2/main.cpp)
+
+### [Exercise 3.25](exercise-3.25/main.cpp)
