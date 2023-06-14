@@ -40,6 +40,14 @@
 >
 > (p. 105)
 
+> If the container is empty, the iterators returned by `begin` and `end` are equal - they are both off-the-end iterators.
+> 
+> (p. 106)
+
+> Because the iterator returned from `end` does not denote an element, it may not be incremented or dereferenced.
+> 
+> (p. 107)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -181,3 +189,7 @@ Using value initialization is preferred because all elements have the same value
 * [Exercise 3.24.2](exercise-3.24.2/main.cpp)
 
 ### [Exercise 3.25](exercise-3.25/main.cpp)
+
+### Exercise 3.26
+
+Because there's no support for `+` operation between two iterators of `string`.
