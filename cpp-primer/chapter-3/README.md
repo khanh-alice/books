@@ -222,3 +222,13 @@ Using value initialization is preferred because all elements have the same value
 * `int ia[10];` has 10 elements with value `0`.
 * `string sa2[10];` has 10 empty strings.
 * `int ia2[10];` has 10 elements with undefined value.
+
+### Exercise 3.29
+
+> Unlike a `vector`, arrays have fixed size; we cannot add elements to an array.
+>
+> (p. 113)
+
+> We cannot initialize an array as a copy of another array, nor is it legal to assign one array to another.
+>
+> (p. 114)
