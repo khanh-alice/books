@@ -215,3 +215,10 @@ Using value initialization is preferred because all elements have the same value
 * (b) `int ia[4 * 7 - 14];` is legal.
 * (c) `int ia[txt_size()];` is illegal because `txt_size()` is not a constant expression.
 * (d) `char st[11] = "fundamental";` is illegal because there's no space for the null character.
+
+### Exercise 3.28
+
+* `string sa[10];` has 10 empty strings.
+* `int ia[10];` has 10 elements with value `0`.
+* `string sa2[10];` has 10 empty strings.
+* `int ia2[10];` has 10 elements with undefined value.
