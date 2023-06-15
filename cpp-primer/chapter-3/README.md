@@ -244,3 +244,8 @@ Array `ia` has 10 elements so its index ranges from `0` to `9`. The loop however
 iteration is an indexing error because `ia[10]` is out of range.
 
 ### [Exercise 3.31](exercise-3.31/main.cpp)
+
+### Exercise 3.32
+
+* [Exercise 3.32.1](exercise-3.32.1/main.cpp)
+* [Exercise 3.32.2](exercise-3.32.2/main.cpp)
