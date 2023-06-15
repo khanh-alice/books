@@ -40,13 +40,28 @@
 >
 > (p. 105)
 
-> If the container is empty, the iterators returned by `begin` and `end` are equal - they are both off-the-end iterators.
-> 
+> If the container is empty, the iterators returned by `begin` and `end` are equal - they are both off-the-end
+> iterators.
+>
 > (p. 106)
 
 > Because the iterator returned from `end` does not denote an element, it may not be incremented or dereferenced.
-> 
+>
 > (p. 107)
+
+> As with variables of built-in type, a default-initialized array of built-in type that is defined inside a function
+> will have undefined value.
+>
+> (p. 113)
+
+> We cannot initialize an array as a copy of another array, nor is it legal to assign one array to another.
+>
+> (p. 114)
+
+> It can be easier to understand array declarations by starting with the array's name and reading them from the inside
+> out.
+>
+> (p. 115)
 
 ## Exercises
 
@@ -192,4 +207,11 @@ Using value initialization is preferred because all elements have the same value
 
 ### Exercise 3.26
 
-Because there's no support for `+` operation between two iterators of `string`.
+`(beg + end)` is illegal because there's no support for `+` operation between two iterators of `string`.
+
+### Exercise 3.27
+
+* (a) `int ia[buf_size];` is illegal because `buf_size` is not a constant expression.
+* (b) `int ia[4 * 7 - 14];` is legal.
+* (c) `int ia[txt_size()];` is illegal because `txt_size()` is not a constant expression.
+* (d) `char st[11] = "fundamental";` is illegal because there's no space for the null character.
