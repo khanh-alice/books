@@ -63,6 +63,11 @@
 >
 > (p. 115)
 
+> The most common source of security problems are buffer overflow bugs. Such bugs occur when a program fails to check a
+> subscript and mistakenly uses memory outside the range of an array or similar data structure.
+>
+> (p. 116)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -232,3 +237,8 @@ Using value initialization is preferred because all elements have the same value
 > We cannot initialize an array as a copy of another array, nor is it legal to assign one array to another.
 >
 > (p. 114)
+
+### Exercise 3.30
+
+Array `ia` has 10 elements so its index ranges from `0` to `9`. The loop however iterates from `1` to `10`, so the last
+iteration is an indexing error because `ia[10]` is out of range.
