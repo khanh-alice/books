@@ -242,3 +242,5 @@ Using value initialization is preferred because all elements have the same value
 
 Array `ia` has 10 elements so its index ranges from `0` to `9`. The loop however iterates from `1` to `10`, so the last
 iteration is an indexing error because `ia[10]` is out of range.
+
+### [Exercise 3.31](exercise-3.31/main.cpp)
