@@ -249,3 +249,8 @@ iteration is an indexing error because `ia[10]` is out of range.
 
 * [Exercise 3.32.1](exercise-3.32.1/main.cpp)
 * [Exercise 3.32.2](exercise-3.32.2/main.cpp)
+
+### Exercise 3.33
+
+If we did not initialize `scores` array, the values of `scores` will be undefined and the final result will be
+inaccurate.
