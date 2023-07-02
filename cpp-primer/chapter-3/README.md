@@ -68,6 +68,20 @@
 >
 > (p. 116)
 
+> In most expressions, when we use an object of array type, we are really using a pointer to the first element in that
+> array.
+>
+> (p. 117)
+
+> Computing a pointer more than one past the last element is an error, although the compiler is unlikely to detect such
+> errors.
+>
+> (p. 120)
+
+> Unlike subscripts for `vector` and `string`, the index of the built-in subscript operator is not an `unsigned` type.
+>
+> (p. 121)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -254,3 +268,10 @@ iteration is an indexing error because `ia[10]` is out of range.
 
 If we did not initialize `scores` array, the values of `scores` will be undefined and the final result will be
 inaccurate.
+
+### Exercise 3.34
+
+It changes the element that `p1` points to, to the element that `p2` points to, to that `p1` and `p2` point to the same
+element in the array.
+
+There are no values of `p1` or `p2` make the code illegal.
