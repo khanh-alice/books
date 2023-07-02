@@ -208,8 +208,8 @@ Using value initialization is preferred because all elements have the same value
 
 ### Exercise 3.20
 
-* [Exercise 3.20.1](exercise-3.20.1/main.cpp)
-* [Exercise 3.20.2](exercise-3.20.2/main.cpp)
+1. [Exercise 3.20.1](exercise-3.20.1/main.cpp)
+2. [Exercise 3.20.2](exercise-3.20.2/main.cpp)
 
 ### [Exercise 3.21](exercise-3.21/main.cpp)
 
@@ -219,8 +219,8 @@ Using value initialization is preferred because all elements have the same value
 
 ### Exercise 3.24
 
-* [Exercise 3.24.1](exercise-3.24.1/main.cpp)
-* [Exercise 3.24.2](exercise-3.24.2/main.cpp)
+1. [Exercise 3.24.1](exercise-3.24.1/main.cpp)
+2. [Exercise 3.24.2](exercise-3.24.2/main.cpp)
 
 ### [Exercise 3.25](exercise-3.25/main.cpp)
 
@@ -261,8 +261,8 @@ iteration is an indexing error because `ia[10]` is out of range.
 
 ### Exercise 3.32
 
-* [Exercise 3.32.1](exercise-3.32.1/main.cpp)
-* [Exercise 3.32.2](exercise-3.32.2/main.cpp)
+1. [Exercise 3.32.1](exercise-3.32.1/main.cpp)
+2. [Exercise 3.32.2](exercise-3.32.2/main.cpp)
 
 ### Exercise 3.33
 
@@ -277,3 +277,8 @@ element in the array.
 There are no values of `p1` or `p2` make the code illegal.
 
 ### [Exercise 3.35](exercise-3.35/main.cpp)
+
+### Exercise 3.36
+
+1. [Exercise 3.36.1](exercise-3.36.1/main.cpp)
+2. [Exercise 3.36.2](exercise-3.36.2/main.cpp)
