@@ -82,6 +82,11 @@
 >
 > (p. 121)
 
+> For most applications, in addition to being safer, it is also more efficient to use library `string`s rather than
+> C-style strings.
+>
+> (p. 123)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -185,24 +190,24 @@ ivec.push_back(42);
 
 1. Use **value initialization** to create a `vector` with 10 elements, each with the value `42`.
 
-  ```cpp
-  vector<int> v1(10, 42);
-  ```
+    ```cpp
+    vector<int> v1(10, 42);
+    ```
 
 2. Use **list initialization** to create a `vector` with 10 elements, each with the value `42`.
 
-  ```cpp
-  vector<int> v2{42, 42, 42, 42, 42, 42, 42, 42, 42, 42};
-  ```
+    ```cpp
+    vector<int> v2{42, 42, 42, 42, 42, 42, 42, 42, 42, 42};
+    ```
 
 3. Use `push_back` to add the value `42` to the `vector` until it has 10 elements.
 
-  ```cpp
-  vector<int> v3;
-  for (int i = 0; i < 10; ++i) {
-    v3.push_back(42);
-  }
-  ```
+    ```cpp
+    vector<int> v3;
+    for (int i = 0; i < 10; ++i) {
+      v3.push_back(42);
+    }
+    ```
 
 Using value initialization is preferred because all elements have the same value.
 
@@ -282,3 +287,8 @@ There are no values of `p1` or `p2` make the code illegal.
 
 1. [Exercise 3.36.1](exercise-3.36.1/main.cpp)
 2. [Exercise 3.36.2](exercise-3.36.2/main.cpp)
+
+### Exercise 3.37
+
+The program prints all characters in `ca`, and because `ca` is not null-terminated, the program will continue to print
+some garbage characters until it reaches a null character.
