@@ -297,3 +297,8 @@ some garbage characters until it reaches a null character.
 
 Pointers are essentially memory addresses, so adding them will result in an address that is either invalid or an
 un-relating address, which is both unsafe and meaningless.
+
+### Exercise 3.39
+
+1. [Exercise 3.39.1](exercise-3.39.1/main.cpp)
+2. [Exercise 3.39.2](exercise-3.39.2/main.cpp)
