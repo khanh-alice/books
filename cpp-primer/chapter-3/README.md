@@ -302,3 +302,5 @@ un-relating address, which is both unsafe and meaningless.
 
 1. [Exercise 3.39.1](exercise-3.39.1/main.cpp)
 2. [Exercise 3.39.2](exercise-3.39.2/main.cpp)
+
+### [Exercise 3.40](exercise-3.40/main.cpp)
