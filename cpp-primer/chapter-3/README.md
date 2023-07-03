@@ -292,3 +292,8 @@ There are no values of `p1` or `p2` make the code illegal.
 
 The program prints all characters in `ca`, and because `ca` is not null-terminated, the program will continue to print
 some garbage characters until it reaches a null character.
+
+### Exercise 3.38
+
+Pointers are essentially memory addresses, so adding them will result in an address that is either invalid or an
+un-relating address, which is both unsafe and meaningless.
