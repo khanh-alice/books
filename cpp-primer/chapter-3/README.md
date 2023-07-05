@@ -315,3 +315,5 @@ un-relating address, which is both unsafe and meaningless.
 ### [Exercise 3.40](exercise-3.40/main.cpp)
 
 ### [Exercise 3.41](exercise-3.41/main.cpp)
+
+### [Exercise 3.42](exercise-3.42/main.cpp)
