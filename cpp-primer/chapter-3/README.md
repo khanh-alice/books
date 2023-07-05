@@ -87,6 +87,15 @@
 >
 > (p. 123)
 
+> Pointers and arrays are surprisingly error-prone. Part of the problem is conceptual: Pointers are used for low-level
+> manipulations and it is easy to make bookkeeping mistakes. Other problems arise because of the syntax, particularly
+> the declaration syntax used with pointers.
+>
+> Modern C++ programs should use `vector`s nad iterators instead of build-in arrays and pointers, and use `string`s
+> rather than C-style array-based character strings.
+>
+> (p. 125)
+
 ## Exercises
 
 ### Exercise 3.1
@@ -304,3 +313,5 @@ un-relating address, which is both unsafe and meaningless.
 2. [Exercise 3.39.2](exercise-3.39.2/main.cpp)
 
 ### [Exercise 3.40](exercise-3.40/main.cpp)
+
+### [Exercise 3.41](exercise-3.41/main.cpp)
