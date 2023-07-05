@@ -5,10 +5,12 @@ using std::cout;
 using std::end;
 using std::endl;
 
-using int_array = int[4];
+constexpr size_t row_size = 3, col_size = 4;
+
+using int_array = int[col_size];
 
 int main() {
-  int_array ia[3] = {{0, 1, 2, 3}, {4, 5, 6, 7}, {8, 9, 10, 11}};
+  int_array ia[row_size] = {{0, 1, 2, 3}, {4, 5, 6, 7}, {8, 9, 10, 11}};
 
   for (int_array *row = begin(ia); row != end(ia); ++row) {
     for (int *col = begin(*row); col != end(*row); ++col) {

@@ -329,3 +329,9 @@ un-relating address, which is both unsafe and meaningless.
 1. [Exercise 3.44.1](exercise-3.44.1/main.cpp)
 2. [Exercise 3.44.2](exercise-3.44.2/main.cpp)
 3. [Exercise 3.44.3](exercise-3.44.3/main.cpp)
+
+### Exercise 3.45
+
+1. [Exercise 3.45.1](exercise-3.45.1/main.cpp)
+2. [Exercise 3.45.2](exercise-3.45.2/main.cpp)
+3. [Exercise 3.45.3](exercise-3.45.3/main.cpp)

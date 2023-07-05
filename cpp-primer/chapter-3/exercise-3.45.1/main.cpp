@@ -10,8 +10,8 @@ using int_array = int[col_size];
 int main() {
   int_array ia[row_size] = {{0, 1, 2, 3}, {4, 5, 6, 7}, {8, 9, 10, 11}};
 
-  for (const int_array &row : ia) {
-    for (int col : row) {
+  for (auto &row : ia) {
+    for (auto col : row) {
       cout << col << " ";
     }
     cout << endl;
