@@ -317,3 +317,9 @@ un-relating address, which is both unsafe and meaningless.
 ### [Exercise 3.41](exercise-3.41/main.cpp)
 
 ### [Exercise 3.42](exercise-3.42/main.cpp)
+
+### Exercise 3.43
+
+1. [Exercise 3.43.1](exercise-3.43.1/main.cpp)
+2. [Exercise 3.43.2](exercise-3.43.2/main.cpp)
+3. [Exercise 3.43.3](exercise-3.43.3/main.cpp)
