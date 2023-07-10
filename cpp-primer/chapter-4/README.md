@@ -36,3 +36,38 @@ best practice to evaluate the operands first in the order that we want before us
 ### [Exercise 4.4](exercise-4.4/main.cpp)
 
 (((12 / 3) * 4) + (5 * 15)) + ((24 % 4) / 2)
+
+### Exercise 4.5
+
+* (a) -86
+* (b) -18
+* (c) 0
+* (d) -2
+
+### Exercise 4.6
+
+```c++
+int i;
+bool is_even = i % 2 == 0;
+```
+
+### Exercise 4.7
+
+> Overflow happens when a value is computed that is outside the range of values that the type can represent.
+> 
+> (p. 140)
+
+```c++
+short s = 32767;
+++s;
+```
+
+```c++
+unsigned u = 0;
+--u;
+```
+
+```c++
+unsigned short us = 65535;
+++us;
+```
