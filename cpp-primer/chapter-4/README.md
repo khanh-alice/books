@@ -32,3 +32,7 @@ It returns `105`
 
 Yes, because we should not rely on the order of evaluation of the operands of operators when writing expressions. It is
 best practice to evaluate the operands first in the order that we want before using them in the expression.
+
+### [Exercise 4.4](exercise-4.4/main.cpp)
+
+(((12 / 3) * 4) + (5 * 15)) + ((24 % 4) / 2)
