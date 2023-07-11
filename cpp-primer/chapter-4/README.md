@@ -54,7 +54,7 @@ bool is_even = i % 2 == 0;
 ### Exercise 4.7
 
 > Overflow happens when a value is computed that is outside the range of values that the type can represent.
-> 
+>
 > (p. 140)
 
 ```c++
@@ -71,3 +71,24 @@ unsigned u = 0;
 unsigned short us = 65535;
 ++us;
 ```
+
+### Exercise 4.8
+
+> The logical `AND` and `OR` operators always evaluate their left operand before the right. Moreover, the right operand
+> is evaluated _if and only if_ the left operand does not determine the result. This strategy is known as **short-circuit
+evaluation**:
+>
+> * The right side of an `&&` is evaluated if and only if the left side is `true`.
+> * The right side of an `||` is evaluated if and only if the left side is `false`.
+>
+> (p. 142)
+
+The order of evaluation of the operands of equality operator `==` is undefined.
+
+### Exercise 4.9
+
+`cp` is a `const char*` which is not a `nullptr` so it evaluates to `true`.
+
+`*cp` is a `char` which is `'H'` so it also evaluates to `true`.
+
+`cp && *cp` evaluates to `true` because both operands are `true`.
